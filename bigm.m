@@ -6,10 +6,6 @@ z=zeros(1,ac);
 for i=1:ac
     z(i)=cc*a(:,i)-c(i);
 end
-z=zeros(1,ac);
-for i=1:ac
-    z(i)=cc*(a(:,i))-c(i);
-end
 [zmin,zind]=min(z(1:ac-1));
 j=1;
 while zmin<0
