@@ -3,7 +3,7 @@ b=input("Rhs column vector:");
 A=input("Coefficient matrix:");
 Z=input("Cost vector:");
 A=[A eye(noOfConstraints) b];
-Z=[Z zeros(noOfConstraints+1)];
+Z=[Z zeros(1,noOfConstraints+1)];
 
 cv=zeros(1,noOfConstraints);
 zc=zeros(1,length(A));
